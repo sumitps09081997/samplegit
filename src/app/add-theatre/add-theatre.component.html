@@ -1,0 +1,48 @@
+
+
+
+<div style="text-align: center">
+    <h1> <b> Add Theatre Here</b></h1>
+   
+  </div>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <form>
+          <fieldset>
+            <legend class="text-center">Valid information is required to add Theatre. <span class="req"><small>
+                  </small></span></legend>
+  
+  
+             <div class="form-group">
+              <label for="MovieName"><span class="req">* </span> Location:- <small>This will be your Movie Name </small>
+              </label>
+              <input required type="text" name="location" id="location" class="form-control phone" [(ngModel)]="admin.location"
+                maxlength="28" placeholder="Enter your Location..." />
+            </div>
+            <div class="form-group">
+              <label for="MovieName"><span class="req">* </span> Theatre Name:- <small>This will be your Theatre Name </small>
+              </label>
+              <input required type="text" name="location" id="location" class="form-control phone" [(ngModel)]="admin.theatrename"
+                maxlength="28" placeholder="Enter your Theatre Name..." />
+            </div>
+  
+                <p>
+  
+                </p>
+            <div class="form-group">
+              <input class="btn btn-success" type="submit" name="submit_reg" value="submit" (click)="addTheatreNow()">
+            </div>
+          </fieldset>
+        </form>
+       
+      </div>
+     
+  
+    </div>
+  
+  </div>
+
+  <h2>{{message}}</h2>
+

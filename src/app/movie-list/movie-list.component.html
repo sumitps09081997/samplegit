@@ -1,0 +1,30 @@
+<h1>Display All Movies</h1>
+<button type="submit" class="btn btn-primary" (click)="display()">Display Movie</button>
+<p> </p>
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+               <th>ShowId</th>
+                <th>Movie Name</th>
+                <th>Total No Of Tickets</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Booking Count</th>
+                <th>Movie Image</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let m of message">
+                <td>{{m.showid}}</td>
+                <td>{{m.moviename}}</td>
+                <td>{{m.totalnooftickets}}</td>
+                <td>{{m.date}}</td>
+                <td>{{m.time}}</td>
+                <td>{{m.bookingcount}}</td>
+                
+
+            </tr>
+        </tbody>
+    </table>
+</div>    
