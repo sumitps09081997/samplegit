@@ -11,7 +11,7 @@ import { AddTheatreComponent } from './add-theatre/add-theatre.component';
 import { AddShowTimingsComponent } from './add-show-timings/add-show-timings.component';
 import { UpdateShowTimingsComponent } from './update-show-timings/update-show-timings.component';
 import { DeleteShowTimingsComponent } from './delete-show-timings/delete-show-timings.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ShowInformationService } from './show-information.service';
 import { TheatreService } from './theatre.service';
@@ -41,6 +41,7 @@ import { FooterComponent } from './footer/footer.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [
     ShowInformationService,

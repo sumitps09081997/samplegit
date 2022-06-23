@@ -7,7 +7,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-6">
-      <form>
+      <form action="#" onsubmit="return validation()" >
         <fieldset>
           <legend class="text-center">Valid information is required to add Movie <span class="req"><small>
                 </small></span></legend>
@@ -28,8 +28,9 @@
           <div class="form-group">
             <label for="MovieName"><span class="req">* </span> Movie Name:- 
             </label>
-            <input required type="text" name="MovieName" id="MovieName" class="form-control phone" [(ngModel)]="admin.moviename"
+            <input required type="text" name="MovieName" id="MovieName" class="form-control" class="form-control phone" [(ngModel)]="admin.moviename"
               maxlength="28" placeholder="Enter your MovieName..." />
+              <span id="moviename" class="text-danger font-weight-bold"></span>
           </div>
           <div class="form-group">
             <label for="totalnooftickets"><span class="req">* </span> Total Number Of Tickets:- 
@@ -59,13 +60,7 @@
             <div id="errFirst"></div>
           </div>
           <p> </p>
-          <div class="form-group">
-
-            <label for="uploadimage"><span class="req">* </span> Upload Movie Image:- </label><br>
-            <img [src]="url" height="100" ><br>
-            <input type="file"(change)="onselectFile($event)" id="fileImg" name="fileImg" />
-            <div id="errFirst"></div>
-          </div>
+         
 
               <p>
 
@@ -82,3 +77,18 @@
 
 </div>
 <h2>{{message}}</h2>
+
+
+<script type="text/javascript">
+
+  function validation(){
+    var MovieName=document.getElementById('MovieName').value;
+    if(MovieName==""){
+      document.getElementById('moviename').innerHTML="** please fill the Movie name  Field";
+      return false;
+    }
+  }
+
+
+
+</script>

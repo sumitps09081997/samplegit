@@ -1,11 +1,14 @@
 
 .container{
- background-color: aqua;
+ background-color: blue;
 
+ background-image: url(../../assets/back2.jpg);
  
 }
+
+
 h1{
-    color: orange;
+    color: blue;
 }
 h2{
     text-align: center;

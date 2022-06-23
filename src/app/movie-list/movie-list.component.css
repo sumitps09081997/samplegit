@@ -1,7 +1,7 @@
 .container{
-    background-color: whitesmoke;
-    
+    background-color: blue;
+    background-image: url(../../assets/back2.jpg);
    }
    h1{
-       color: rgb(13, 123, 28);
+       color: blue;
    }

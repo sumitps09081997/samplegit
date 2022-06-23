@@ -16,11 +16,12 @@ export class MovieListComponent implements OnInit{
         totalnooftickets!:number;
         date!:Date;
         bookingcount!:number;
-        image!:ImageData;  
+       
 
   ngOnInit(): void {
    
   }
+
   
  public display(){
   this.message=this.service.displayMovie().subscribe(data=>this.message=data);

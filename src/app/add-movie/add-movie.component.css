@@ -1,9 +1,10 @@
 .container{
-    background-color:aquamarine;
+   
+    background-image: url(../../assets/back2.jpg);
    
    }
 h1{
-       color:darkblue;
+       color:blue;
    }
 body{
     background-image: url(../../assets/pvr_cinemas.jpg);

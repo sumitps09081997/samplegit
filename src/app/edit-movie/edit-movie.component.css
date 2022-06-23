@@ -1,12 +1,12 @@
 .container{
-    background-color:rgb(120, 212, 44);
-  
+    background-color:blue;
+    background-image: url(../../assets/back2.jpg);
     
 
     
    }
    h1{
-       color:red;
+       color:blue;
    }
 
  

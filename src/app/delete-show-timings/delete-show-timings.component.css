@@ -1,6 +1,6 @@
 .container{
-    background-color: rgb(177, 190, 29);
-    
+    background-color: blue;
+    background-image: url(../../assets/back2.jpg);
    }
    h1{
        color: blue;
